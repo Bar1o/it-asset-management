@@ -21,11 +21,18 @@ footer: 'IT Asset Management'
 
 ---
 
+<!-- class: box -->
+
+
 #### Цель проекта
 
 Проект посвящен проектированию и разработке базы данных для системы усправления оборудованием (устройство, ноутбуки, периферия) в компании.
 
 Моделирование БД осуществлялось с помощью ERD в нотации Чен (Chen-notaion). Взаимосвязи между таблицами указаны в другой ERD.
+
+**Ключевые слова:** Моделирование, ERD, Архитектура, Аналитика, SQL, Запросы, База данных
+
+См. презентацию [DB-project](DB-project.pdf) для более подробного ознакопления в удобном формате. 
 
 ---
 
@@ -34,6 +41,28 @@ footer: 'IT Asset Management'
 The project is devoted to the design and development of a database for the system of equipment management (device, laptops, peripherals) in the company.
 
 The database was modeled using ERD in Chen-notation. The relationships between the tables are specified in another ERD.
+
+**Keywords:** Modeling, ERD, Architecture, Analytics, SQL, Queries, Database
+
+Check out the [DB-project](DB-project.pdf) presentation for more details in a convenient format. 
+
+
+---
+
+### Инициализация проекта для локального запуска
+
+Создание БД:
+```py
+python3 -m db.py
+```
+После этого создастся файл `local.db`. БД создается с помощью `makedb.sql`.
+
+Если Вы используете VS Code, то установите расширение SQLite для совершения запросов к БД.
+
+Запросы, упомянутые здесь и в презентации, есть в файле `queries.sql`: **15+** запросов, где есть агрегирующие функции, подзапросы, CTE, VIEW, триггеры, оконные функции.
+
+Запросы пишутся в файл `queries.sql`.
+
 
 ---
 <!-- class: box -->
@@ -385,7 +414,7 @@ END;
 
 - 3 оконные функции.
 
-См. в файле `CODE.sql`.
+См. файлы [queries](queries.sql).
 
 ---
 
