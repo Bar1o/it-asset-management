@@ -24,7 +24,7 @@ footer: 'IT Asset Management'
 <!-- class: box -->
 
 
-#### Цель проекта
+## Цель проекта
 
 Проект посвящен проектированию и разработке базы данных для системы усправления оборудованием (устройство, ноутбуки, периферия) в компании.
 
@@ -36,7 +36,7 @@ footer: 'IT Asset Management'
 
 ---
 
-### Project goal
+## Project goal
 
 The project is devoted to the design and development of a database for the system of equipment management (device, laptops, peripherals) in the company.
 
@@ -49,7 +49,7 @@ Check out the [DB-project](DB-project.pdf) presentation for more details in a co
 
 ---
 
-### Инициализация проекта для локального запуска
+## Инициализация проекта для локального запуска
 
 Создание БД:
 ```py
@@ -67,7 +67,7 @@ python3 -m db.py
 ---
 <!-- class: box -->
 
-#### Описание БД
+## Описание БД
 **Назначение:** учёт IT-оборудования, сотрудников, отделов, поставщиков, управлениу назначениями оборудования и его обслуживанием (ремонтом).
 
 **Основные цели:**
@@ -81,7 +81,7 @@ python3 -m db.py
 ---
 
 
-#### DB description
+## DB description
 **Purpose:** Accounting of IT equipment, employees, departments, suppliers, management of equipment assignments and its maintenance (repair).
 
 **Main purposes:**
@@ -149,7 +149,7 @@ ERD Chen-notation
 ---
 <!-- _class: box image-slide -->
 
-#### Связи Asset
+### Связи Asset
 
 ![alt text](pics/asset_key.png)
 
@@ -157,7 +157,7 @@ ERD Chen-notation
 
 <!-- _class: box image-slide -->
 
-#### Связи Asset-Vendor
+### Связи Asset-Vendor
 ![alt text](pics/asset_vendor_key.png)
 
 
@@ -166,13 +166,13 @@ ERD Chen-notation
 
 <!-- _class: box image-slide -->
 
-#### Связи Employee
+### Связи Employee
 
 ![alt text](pics/employee_key.png)
 
 ---
 
-#### Нормализация
+## Нормализация
 
 - Все отношения в 3NF
 - Каждый атрибут зависит только от ключа, нет транзитивных зависимостей
@@ -185,7 +185,7 @@ ERD Chen-notation
 Все нетривиальные зависимости устранены ⇒ достигается 4NF
 
 ---
-#### Создание таблиц
+### Создание таблиц
 
 `Assignment`
 
@@ -407,7 +407,7 @@ END;
 
 ---
 
-#### Итоги по запросам
+## Итоги по запросам
 - 16 запросов, куда входят 1 CTE c рекурсией для построения иерархии, 1 VIEW.
 
 - 2 запроса с триггерами: один – для проверки вместимости департамента (нельзя добавить сотрудников больше, чем может быть в департаменте), второй – для обновления состояния актива после его обслуживания.
@@ -418,7 +418,7 @@ END;
 
 ---
 
-#### Перспективы развития
+## Перспективы развития
 
 - Добавить более сложные связи между сущностями
 - Автоматизировать отчётность по оборудованию
