@@ -184,7 +184,7 @@ CREATE TABLE Assignment (
 </div>
 
 <div class="column2">
-<img src="pics/image.png" alt="диаграмма" width="50%">
+<img src="pics/image.png" alt="диаграмма" width="50%" style="align-center">
 
 </div>
 </div>
